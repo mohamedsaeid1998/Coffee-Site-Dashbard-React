@@ -22,7 +22,6 @@ let navigate = useNavigate()
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     setImageFile(file);
-
   }
 
 

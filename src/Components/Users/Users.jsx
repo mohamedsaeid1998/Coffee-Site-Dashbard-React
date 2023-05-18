@@ -14,7 +14,6 @@ export default function Users() {
 
   useEffect(()=>{
     getUsers()
-
   },[])
 
   const [User, setUser] = useState(null)
