@@ -113,33 +113,33 @@ async function handelRegister (values){
 
 
   return <>
-         <Helmet>
+        <Helmet>
         <title>Add Product</title>
         </Helmet>
-        <div className="main" >
+        <div className="main">
       <div className="content-header d-flex justify-content-between align-content-center p-4">
         <Link to={"/products"}>
         <button className="btn btn-danger">Go to products</button>
 
         </Link>
 
-        <h2 className="content-title">Update Product</h2>
+        <h2 className="content-title">Add Product</h2>
 
         <Link to={"/dashboard"}>
         <button className="btn btn-success">Go to DashBoard</button>
         </Link>
       </div>
       <div className='d-flex justify-content-center align-content-center'>
-    <form className='w-50' onSubmit={formik.handleSubmit}>
+    <form className='w-75' onSubmit={formik.handleSubmit}>
       <div className="row mb-4">
         <div className="col-xl-12 col-lg-12">
           <div className="card mb-4 shadow-sm">
             <div className="card-body">
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-between gap-2 overflow-hidden'>
 
 
 
-                <div className='category '>
+                <div className='category'>
                 <label htmlFor="category">Category</label>
             <select id="category" name='category' className="form-select  ">
             {category?.result?.map((category,index)=><option key={index}  value={category._id}>{category.name}</option>
@@ -147,7 +147,7 @@ async function handelRegister (values){
             </select>
                 </div>
 
-                <div className='brand mx-2'>
+                <div className='brand'>
                 <label htmlFor="brand"> Brand</label>
             <select id="brand" name='brand' className="form-select  ">
             {brand?.result?.map((brand,index)=><option key={index} value={brand._id}>{brand.name}</option>
