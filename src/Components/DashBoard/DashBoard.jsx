@@ -121,16 +121,16 @@ if (Paid[index].innerHTML==="False" && status[index].innerHTML==="In Progress"){
 
                     {load?<div className='text-center'><i className='fas fa-spinner fa-spin fa-4x text-black-50' ></i></div>:<table>
                         
-                        <thead>
-                            <tr>
+                        <thead >
+                            <tr >
                                 <td>Details</td>
-                                <td>city</td>
+                                <td className='text-center'>City</td>
                                 <td>Price</td>
-                                <td>Phone</td>
+                                <td className='text-center'>Phone</td>
                                 <td>CreatedAt</td>
                                 <td>Payment</td>
                                 <td>Status</td>
-                                <td>Update</td>
+                                <td className='text-center'>Update</td>
                             </tr>
                         </thead>
 

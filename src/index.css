@@ -117,6 +117,7 @@ body {
     pointer-events: none;
 }
 
+
 .navigation ul li:hover a::after,
 .navigation ul li.hovered a::after {
     content: "";

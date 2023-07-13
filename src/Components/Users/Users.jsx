@@ -41,7 +41,7 @@ export default function Users() {
   async function deleteUserDetails(id){
     let response = await deleteUser(id)
     if(response.status === 200){
-        swal("Good job!", "The product has been successfully deleted", "success");
+        swal("Good job!", "User has been successfully deleted", "success");
         getUsers(page)
     }
 

@@ -16,7 +16,7 @@ export default function Navigation({logout}) {
                         <span className="title text-white mx-2  ">Cafena Shop</span>
                 </li>
 
-                <li>
+                <li className='hovered'>
                     <Link className='d-flex align-items-center mx-2' to={"/dashBoard"}>
                         <i className="fa-solid fa-house  fs-4"></i>
                         <span className="title ">Dashboard</span>

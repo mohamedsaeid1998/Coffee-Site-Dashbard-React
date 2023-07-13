@@ -26,10 +26,8 @@ async function getProducts(page){
 
 async function handlePageClick(data){
   let page = data.selected+1
-
   setPage(page)
   getProducts(page)
-
 }
 
 
